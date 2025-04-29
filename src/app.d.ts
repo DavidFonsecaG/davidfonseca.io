@@ -1,13 +1,36 @@
-// See https://svelte.dev/docs/kit/types#app.d.ts
+// See https://kit.svelte.dev/docs/types#app
 // for information about these interfaces
-declare global {
-	namespace App {
-		// interface Error {}
-		// interface Locals {}
-		// interface PageData {}
-		// interface PageState {}
-		// interface Platform {}
+// and what to do when importing types
+declare namespace App {
+	// interface Locals {}
+	// interface Platform {}
+	// interface PrivateEnv {}
+	// interface PublicEnv {}
+	// interface Session {}
+	// interface Stuff {}
+  }
+  
+  declare type O<T> = T | undefined;
+  
+  declare interface LinkData {
+	to: string;
+	text: string;
+	icon?: string;
+  }
+  
+  declare namespace KB {
+	interface Article {
+	  id: string;
+	  title: string;
 	}
-}
-
-export {};
+  
+	interface Category {
+	  category: string;
+	  col: number;
+	  articles: Article[];
+	}
+  
+	interface Outline {
+	  kb: Category[];
+	}
+  }
