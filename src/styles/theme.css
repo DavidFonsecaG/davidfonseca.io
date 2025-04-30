@@ -98,7 +98,7 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.974 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
@@ -161,28 +161,24 @@
 .nav-glass {
   @apply w-full transition-all duration-500 ease-in-out scale-100;
 
-  .title {
-    @apply flex text-primary w-full transition-all  delay-1000 duration-1000 ease-in-out
-  }
-
   .desktop-links-button {
-    @apply bg-primary text-primary-foreground transition-all duration-700 ease-in-out
+    @apply bg-primary text-primary-foreground transition-all duration-500 ease-in-out
   }
 }
 
 .nav-glass-scrolled {
-  @apply w-65 bg-current/30 backdrop-blur-sm z-50 p-1 rounded-lg gap-1 transition-all duration-500 ease-in-out scale-110;
+  @apply w-62 bg-current/30 backdrop-blur-xs z-50 p-1 rounded-lg gap-1 transition-all duration-500 ease-in-out scale-120;
 
   .title {
-    @apply font-semibold text-xl hidden transition-all delay-1000 duration-1000 ease-in-out
+    @apply hidden
   }
 
   .menu-bg {
-    @apply bg-primary text-white rounded-lg size-9 w-full px-4
+    @apply bg-primary text-white text-sm rounded-lg size-9 w-full px-4
   }
 
   .desktop-links-button {
-    @apply bg-white transition-all duration-700 ease-in-out
+    @apply bg-white transition-all duration-500 ease-in-out
   }
 
 }

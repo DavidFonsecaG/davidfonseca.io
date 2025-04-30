@@ -1,7 +1,7 @@
 <script>
     import '../styles/theme.css';
     import Navigation from '$lib/components/Navigation.svelte';
-    // import Footer from '$lib/components/Footer.svelte';
+    import Footer from '$lib/components/Footer.svelte';
 </script>
   
 <svelte:head>
@@ -22,10 +22,10 @@
     {/if}
 </svelte:head>
 
-<div class="flex flex-col min-h-full items-center font-[inter]">
+<div class="flex flex-col min-h-screen items-center font-[inter] bg-secondary">
     <Navigation />
-    <main class="flex flex-col w-full">
+    <main class="flex flex-col w-full items-center justify-center">
         <slot />
     </main>
-    <!-- <Footer /> -->
+    <Footer />
 </div>
