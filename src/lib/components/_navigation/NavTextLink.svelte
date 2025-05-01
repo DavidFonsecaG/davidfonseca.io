@@ -13,7 +13,7 @@
   </script>
   
   <li 
-    class="text-center px-2"
+    class="text-center px-2 hover:text-blue-500"
     class:nav-link={!scrolled}
   >
     <a class:active href={to} on:click>{title}</a>
