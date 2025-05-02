@@ -6,16 +6,12 @@
         CardContent,
     } from "$lib/components/ui/card";
     import Button from "$lib/components/ui/Button.svelte";
-    import type { SvelteComponent } from "svelte";
-    import { ArrowRight } from 'lucide-svelte';
 
-    export let cardVariant: "secondary" | "default" | "outline";
-  
-    export let svgIcon: (new (...args: any) => SvelteComponent) | null = null;
-  
-    export let badgeText = "";
     export let title = "";
     export let description = "";
+    export let imgSrc = "";
+    export let badgeText = "";
+    export let cardVariant: "secondary" | "default" | "outline";
     export let buttonText = "";
     export let buttonLink = "#";
 </script>
@@ -23,9 +19,7 @@
 <Card variant={cardVariant}>
     <CardContent className="gap-4">
         <div class="flex items-center justify-center p-4 w-2/8 relative">
-            {#if svgIcon}
-                <svelte:component this={svgIcon} class="absolute w-30 h-30" />
-            {/if}
+            <img src={imgSrc} alt="icon" class="absolute w-30 h-30" />
         </div>
     
         <div class="flex flex-col items-start w-6/8 gap-3">
@@ -38,7 +32,7 @@
                 <Button variant="secondary" size="lg" className="pr-1">
                     {buttonText}
                     <span class="inline-flex items-center justify-center size-9 bg-secondary-foreground rounded-md">
-                        <ArrowRight class="text-white w-4 h-4" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                     </span>
                 </Button>
             </a>
