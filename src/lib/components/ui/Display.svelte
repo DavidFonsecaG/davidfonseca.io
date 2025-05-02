@@ -10,9 +10,6 @@
     import { ArrowRight } from 'lucide-svelte';
 
     export let cardVariant: "secondary" | "default" | "outline";
-    export let imageSrc = "";
-    export let imageAlt = "";
-    export let imageClasses = "";
   
     export let svgIcon: (new (...args: any) => SvelteComponent) | null = null;
   
@@ -26,7 +23,6 @@
 <Card variant={cardVariant}>
     <CardContent className="gap-4">
         <div class="flex items-center justify-center p-4 w-2/8 relative">
-            <img class={imageClasses} src={imageSrc} alt={imageAlt} />
             {#if svgIcon}
                 <svelte:component this={svgIcon} class="absolute w-30 h-30" />
             {/if}

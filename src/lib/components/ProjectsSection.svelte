@@ -5,9 +5,6 @@
     const displays = [
       {
         cardVariant: "default",
-        imageSrc: "email-ai.png",
-        imageAlt: "email-ai",
-        imageClasses: "max-h-35 brightness-60 filter grayscale blur-lg contrast-100",
         svgIcon: AtSign,
         badgeText: "Retrieval Augmented Generation",
         title: "AI Powered Email Assistant",
@@ -17,9 +14,6 @@
       },
       {
         cardVariant: "secondary",
-        imageSrc: "email-ai.png",
-        imageAlt: "wildfire",
-        imageClasses: "max-h-35 brightness-80 filter grayscale blur-lg contrast-100",
         svgIcon: Earth,
         badgeText: "Raster - Tiff",
         title: "Mapping wildfires using AVIRIS",

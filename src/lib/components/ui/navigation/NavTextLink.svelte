@@ -10,11 +10,11 @@
     afterNavigate(() => {
       active = window.location.pathname.startsWith(to);
     });
-  </script>
+</script>
   
-  <li 
+<li 
     class="text-center px-2 hover:text-blue-500"
     class:nav-link={!scrolled}
-  >
+>
     <a class:active href={to} on:click>{title}</a>
-  </li>
+</li>
