@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
   
 	import NavDesktopLinks from './ui/navigation/NavDesktopLinks.svelte';
-	// import NavMobileBurger from './_navigation/NavMobileBurger.svelte';
+	import NavMobileBurger from './ui/navigation/NavMobileBurger.svelte';
 	// import NavMobileLinks from './_navigation/NavMobileLinks.svelte';
 	import NavTitle from './ui/navigation/NavTitle.svelte';
   
@@ -44,7 +44,7 @@
   </script>
   
   <nav
-	class="flex p-6 w-full max-w-15/16 items-center justify-center sticky top-0 transition-all duration-300"
+	class="flex p-4 h-20 md:h-17 md:p-6 w-full md:max-w-15/16 items-center justify-center sticky top-0 transition-all duration-300"
 	class:big
 	class:open
   >
@@ -55,17 +55,14 @@
 	>
 	  	<NavTitle {big} {open} on:click={close} />
 		<NavDesktopLinks {big} {scrolled}/>
+		<NavMobileBurger
+		  {big}
+		  {open}
+		  on:click={() => {
+			open = !open;
+		  }}
+		/> 
 	</div>
-  
-	<!-- 
-	<NavMobileBurger
-	  {big}
-	  {open}
-	  on:click={() => {
-		open = !open;
-	  }}
-	/> 
-	-->
   </nav>
   
   <!-- 
