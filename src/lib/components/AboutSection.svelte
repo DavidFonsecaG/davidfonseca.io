@@ -7,6 +7,17 @@
     } from "$lib/components/ui/card";
     import Experience from "./ui/Experience.svelte";
     import { about, experiences } from "$lib/data/siteContent";
+
+    const enrichedExperiences = experiences.map((exp, index, arr) => {
+      const sameTypeBefore = arr.slice(0, index).some(e => e.type === exp.type);
+      const sameTypeAfter = arr.slice(index + 1).some(e => e.type === exp.type);
+
+      return {
+        ...exp,
+        prev: sameTypeBefore,
+        next: sameTypeAfter
+      };
+    });
 </script>
 
 <section id="about" class="flex flex-col w-full p-6 text-card gap-5">
@@ -20,8 +31,8 @@
           </CardDescription>
 
           <div class="flex flex-col w-full items-center justify-center mt-8">
-            {#each experiences as experience (experience.company)}
-              <Experience {...experience} />
+            {#each enrichedExperiences as experience (experience.company)}
+              <Experience {...experience}/>
             {/each}
           </div>
 

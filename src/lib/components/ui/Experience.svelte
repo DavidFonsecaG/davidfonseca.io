@@ -5,20 +5,54 @@
         CardDescription,
         CardContent,
     } from "$lib/components/ui/card";
+    import { cn } from "$lib/utils/utils";
 
-    export let imgSrc = "";
-    export let year = "";
-    export let company = ""; 
-    export let role = "";
-    export let achivement = "";
-    export let type = "";
+    export let imgSrc: string;
+    export let year: string;
+    export let company: string; 
+    export let role: string;
+    export let achivement: string;
+    export let type: "education" | "organization" | "work" | "default";
+    export let prev = false;
+    export let next = false;
+
+    let color: string;
+    let label: string | undefined = undefined;
+    let colorLabel: string;
+
+    let colors = {
+        work: "red-500",
+        organization: "yellow-500",
+        education: "indigo-500",
+    }
+
+    switch (type) {
+        case 'work':
+            color = "bg-" + colors.work;
+            if (!prev) 
+                label = 'WORK';
+                colorLabel = "text-" + colors.work;
+            break;
+        case 'organization':
+            color = "bg-" + colors.organization;
+            if (!prev) 
+                label = 'ORGANIZATIONS';
+                colorLabel = "text-" + colors.organization;
+        break;
+        case 'education':
+            color = "bg-" + colors.education;
+            if (!prev) 
+                label = 'EDUCATION';
+                colorLabel = "text-" + colors.education;
+            break;
+    }
 </script>
 
-<Card variant={"secondary"} className={"w-7/8 py-0"}>
+<Card variant={"secondary"} className={"w-7/8 py-0 h-[164px]"}>
     <CardContent className={"gap-3"}>
-        <div class="flex w-full justify-between py-8">
-            <div class="flex items-center justify-center p-2 mr-6 w-2/16">
-                <img class="max-h-50 md:max-w-20" src={imgSrc} alt="logo">
+        <div class="flex w-full py-8">
+            <div class="flex items-center justify-center p-2 mr-5 w-2/16">
+                <img class="max-h-50 md:max-w-18" src={imgSrc} alt="logo">
             </div>
             <div class="flex flex-col items-start w-11/16">
                 <CardTitle className={"text-sm lg:text-md"}>{year}</CardTitle>
@@ -28,14 +62,18 @@
                     <p class="text-sm text-primary/70">{achivement}</p>
                 </CardDescription>
             </div>
-            <div class="flex items-center justify-end w-3/16">
-                <p class="text-sm font-semibold text-indigo-500">{type}</p>
-            </div>
         </div>
-        <div class="flex flex-col h-full items-center justify-center">
-            <div class=" h-full w-2 bg-indigo-500"></div>
-            <div class=" min-h-4 w-4 rounded-sm bg-indigo-500"></div>
-            <div class=" h-full w-2 bg-indigo-500"></div>
+        <div class="flex flex-col h-full w-4 items-center justify-center relative">
+            {#if prev}
+                <div class={cn(color, "absolute top-0 h-1/2 w-2")}></div>
+            {/if}
+            <div class={cn(color, "absolute h-5 w-5 rounded-sm")}></div>
+            {#if next}
+                <div class={cn(color, "absolute bottom-0 h-1/2 w-2")}></div>
+            {/if}
+            {#if label}
+            <p class={cn(colorLabel, "absolute right-7 text-sm font-semibold")}>{label}</p>
+            {/if}
         </div>
     </CardContent>
 </Card>

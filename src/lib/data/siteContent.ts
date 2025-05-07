@@ -36,7 +36,7 @@ export const experiences = [
     company: "National Louis University", 
     role: "Bachelor of Science, Computer Science", 
     achivement: "Member of the National Society of leadership and success",
-    type: "EDUCATION"
+    type: "education"
   },
   { 
     imgSrc: "utp.jpg",
@@ -44,7 +44,7 @@ export const experiences = [
     company: "Technological University of Pereira", 
     role: "Certificate in Web Development", 
     achivement: "Some text here",
-    type: "EDUCATION"
+    type: "education"
   },
   { 
     imgSrc: "mcc.jpg",
@@ -52,7 +52,7 @@ export const experiences = [
     company: "Midwestern Career College", 
     role: "Business Administration", 
     achivement: "GPA 4.0",
-    type: "EDUCATION"
+    type: "education"
   },
   { 
     imgSrc: "nasa_tops.jpg",
@@ -60,7 +60,7 @@ export const experiences = [
     company: "NASA TOPS project", 
     role: "Member", 
     achivement: "Nominated by NLU",
-    type: "ORGANIZATION"
+    type: "organization"
   },
   { 
     imgSrc: "nsls.jpg",
@@ -68,7 +68,7 @@ export const experiences = [
     company: "Society of Leadership and Success", 
     role: "Member", 
     achivement: "Nominated by NLU",
-    type: "ORGANIZATION"
+    type: "organization"
   },
   { 
     imgSrc: "columbia_university.jpg",
@@ -76,7 +76,7 @@ export const experiences = [
     company: "Columbia University", 
     role: "Research Intern", 
     achivement: "Internship through NLU in collaboration with NASA for the TOPS project",
-    type: "WORK"
+    type: "work"
   },
   { 
     imgSrc: "mcc.jpg",
@@ -84,6 +84,6 @@ export const experiences = [
     company: "Midwestern Career College.", 
     role: "International Admissions", 
     achivement: "Student worker",
-    type: "WORK"
+    type: "work"
   },
 ] as const;
