@@ -28,12 +28,14 @@
   export let variant: CardVariants["variant"] = "default";
   export let size: CardVariants["size"] = "default";
   export let className: string = "";
+  export let styleName: string = "";
 </script>
 
 <svelte:element
   this={variant ? "slot" : "div"}
   data-slot="card"
   class={cn(cardVariants({ variant, size }), className)}
+  style={styleName}
 >
   <slot />
 </svelte:element>
