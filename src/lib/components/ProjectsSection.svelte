@@ -3,7 +3,7 @@
     import { projects } from "$lib/data/siteContent";
 </script>
 
-<section id="projects" class="flex flex-col w-full p-6 text-card gap-5">
+<section id="projects" class="flex flex-col w-full text-card gap-5">
     {#each projects as project (project.title)}
       <Display {...project} />
     {/each}

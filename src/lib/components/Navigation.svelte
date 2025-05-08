@@ -44,7 +44,7 @@
   </script>
   
   <nav
-	class="flex p-4 h-20 md:h-17 md:p-6 w-full md:max-w-15/16 items-center justify-center sticky top-0 transition-all duration-300"
+	class="flex p-4 h-22 md:p-6 w-full md:max-w-15/16 items-center justify-center sticky top-0 transition-all duration-300"
 	class:big
 	class:open
   >
@@ -53,10 +53,10 @@
 	  class:nav-glass={!scrolled}
 	  class:nav-glass-scrolled={scrolled}
 	>
-	  	<NavTitle {big} {open} on:click={close} />
-		<NavDesktopLinks {big} {scrolled}/>
+	  	<NavTitle on:click={close} />
+		<NavDesktopLinks {scrolled}/>
+		<!-- <NavDesktopLinks {scrolled}/> -->
 		<NavMobileBurger
-		  {big}
 		  {open}
 		  on:click={() => {
 			open = !open;

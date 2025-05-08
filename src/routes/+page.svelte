@@ -4,7 +4,7 @@
     import AboutSection from "$lib/components/AboutSection.svelte";
 </script>
 
-<div class="flex flex-col items-center justify-center text-center py-30 gap-20 max-w-15/16">
+<div class="flex flex-col items-center justify-center text-center px-4 pt-25 pb-10 md:px-6 md:pt-60 md:pb-30 w-full md:max-w-15/16 gap-20 ">
     <Hero />
     <ProjectsSection />
     <AboutSection />

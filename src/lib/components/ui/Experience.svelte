@@ -48,13 +48,13 @@
     }
 </script>
 
-<Card variant={"secondary"} className={"w-7/8 py-0 h-[164px]"}>
+<Card variant={"secondary"} className={"p-0 w-full md:px-10 md:w-7/8 md:h-[164px]"}>
     <CardContent className={"gap-3"}>
-        <div class="flex w-full py-8">
-            <div class="flex items-center justify-center p-2 mr-5 w-2/16">
-                <img class="max-h-50 md:max-w-18" src={imgSrc} alt="logo">
+        <div class="flex flex-col w-full py-5 md:py-8 gap-2 md:gap-5 md:flex-row">
+            <div class="flex md:p-2 md:items-center md:justify-center ">
+                <img class="max-w-18" src={imgSrc} alt="logo">
             </div>
-            <div class="flex flex-col items-start w-11/16">
+            <div class="flex flex-col items-start ">
                 <CardTitle className={"text-sm lg:text-md"}>{year}</CardTitle>
                 <CardTitle className={"text-xl lg:text-2xl"}>{company}</CardTitle>
                 <CardDescription>
@@ -63,16 +63,16 @@
                 </CardDescription>
             </div>
         </div>
-        <div class="flex flex-col h-full w-4 items-center justify-center relative">
+        <div class="flex flex-col h-full w-5 items-center justify-center relative">
             {#if prev}
-                <div class={cn(color, "absolute top-0 h-1/2 w-2")}></div>
+                <div class={cn(color, "absolute top-0 h-1/2 w-1.5")}></div>
             {/if}
-            <div class={cn(color, "absolute h-5 w-5 rounded-sm")}></div>
+            <div class={cn(color, "absolute inset-x-0 h-5 w-5 rounded-sm")}></div>
             {#if next}
-                <div class={cn(color, "absolute bottom-0 h-1/2 w-2")}></div>
+                <div class={cn(color, "absolute bottom-0 h-1/2 w-1.5")}></div>
             {/if}
             {#if label}
-            <p class={cn(colorLabel, "absolute right-7 text-sm font-semibold")}>{label}</p>
+                <p class={cn(colorLabel, "absolute right-7 text-sm font-semibold")}>{label}</p>
             {/if}
         </div>
     </CardContent>

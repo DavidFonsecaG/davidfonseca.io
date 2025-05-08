@@ -1,10 +1,10 @@
 <script lang="ts">
-        import { hero } from "$lib/data/siteContent";
+    import { hero } from "$lib/data/siteContent";
 </script>
 
-<section class="my-20 flex flex-col items-center justify-center">
-    <h1 class="text-6xl font-medium mb-4">{hero.title}</h1>
-    <p class="text-lg max-w-xl font-normal text-primary/70">
-      {hero.subtitle}
+<section class="flex flex-col items-center justify-center gap-4">
+    <h1 class="text-4xl md:text-6xl font-medium">{hero.title}</h1>
+    <p class="text-md max-w-xl text-primary/70 md:text-lg">
+      	{hero.subtitle}
     </p>
 </section>

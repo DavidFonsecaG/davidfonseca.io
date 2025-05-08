@@ -6,7 +6,7 @@
 </script>
 
 <div class:big class:open class="md:hidden">
-	<Button size={"icon"} variant={"secondary"} className={"flex flex-col gap-1 p-2 desktop-links-button"} on:click>
+	<Button size={"icon"} variant={"secondary"} className={"flex flex-col gap-1 p-2 cursor-pointer desktop-links-button"} on:click>
 		<div class="bg-primary h-0.5 w-full"></div>
 		<div class="bg-primary h-0.5 w-full"></div>
 		<div class="bg-primary h-0.5 w-full"></div>
