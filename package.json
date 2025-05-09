@@ -1,9 +1,9 @@
 {
-	"name": "davidfonseca.dev",
+	"name": "davidfonseca.io",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
-	"homepage": "https://davidfonsecag.github.io/davidfonseca.dev",
+	"homepage": "https://davidfonsecag.github.io/davidfonseca.io",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",

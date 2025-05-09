@@ -49,12 +49,12 @@
 </script>
 
 <Card variant={"secondary"} className={"p-0 w-full md:px-10 md:w-7/8 md:h-[164px]"}>
-    <CardContent className={"gap-3"}>
+    <CardContent className={"h-full gap-3"}>
         <div class="flex flex-col w-full py-5 md:py-8 gap-2 md:gap-5 md:flex-row">
             <div class="flex md:p-2 md:items-center md:justify-center ">
                 <img class="max-w-18" src={imgSrc} alt="logo">
             </div>
-            <div class="flex flex-col items-start ">
+            <div class="flex flex-col text-start items-start ">
                 <CardTitle className={"text-sm lg:text-md"}>{year}</CardTitle>
                 <CardTitle className={"text-lg md:text-xl lg:text-2xl"}>{company}</CardTitle>
                 <CardDescription>
@@ -72,7 +72,7 @@
                 <div class={cn(color, "absolute bottom-0 h-1/2 w-1.5")}></div>
             {/if}
             {#if label}
-                <p class={cn(colorLabel, "absolute right-7 text-sm font-semibold")}>{label}</p>
+                <p class={cn(colorLabel, "hidden absolute lg:inline right-7 text-sm font-semibold")}>{label}</p>
             {/if}
         </div>
     </CardContent>

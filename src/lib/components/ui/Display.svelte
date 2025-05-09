@@ -34,8 +34,8 @@
             </a>
         </div>
 
-        <div class="flex md:items-center md:justify-center md:p-4 md:w-2/8 md:relative">
-            <img src={imgSrc} alt="icon" class="bg-current/20 rounded-full p-4 w-20 h-20 md:w-30 md:h-30 md:p-0 md:absolute" />
+        <div class="hidden md:flex md:items-center md:justify-center md:p-4 md:w-2/8 md:relative">
+            <img src={imgSrc} alt={imgSrc} class="bg-current/20 rounded-full p-4 w-20 h-20 md:w-30 md:h-30 md:p-0 md:absolute" />
         </div>
     </CardContent>
 </Card>

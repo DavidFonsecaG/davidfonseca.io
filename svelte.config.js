@@ -13,7 +13,7 @@ const config = {
       precompress: false
     }),
     paths: {
-      base: process.env.NODE_ENV === 'development' ? '' : '/davidfonseca.dev'
+      base: process.env.NODE_ENV === 'development' ? '' : '/davidfonseca.io'
     },
     prerender: {
       origin: 'https://davidfonsecag.github.io',
