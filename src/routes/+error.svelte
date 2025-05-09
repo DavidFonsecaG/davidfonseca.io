@@ -1,8 +1,10 @@
 <script lang="ts">
   import Button from "$lib/components/ui/Button.svelte";
-
-
 </script>
+
+<svelte:head>
+    <title>Page not found - David Fonseca</title>
+</svelte:head>
 
 <div class="flex flex-col items-center justify-center text-center px-4 py-15 md:px-6 md:py-30 w-full md:max-w-15/16">
     <section class="flex flex-col items-center justify-center gap-5">

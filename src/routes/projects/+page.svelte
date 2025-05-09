@@ -6,8 +6,11 @@
         CardDescription,
         CardContent,
     } from "$lib/components/ui/card";
-
 </script>
+
+<svelte:head>
+    <title>Projects - David Fonseca</title>
+</svelte:head>
 
 <div class="flex flex-col items-center justify-center text-center px-4 pt-5 pb-10 md:px-6 md:pb-30 w-full md:max-w-15/16 gap-20 ">
 
