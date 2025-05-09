@@ -1,23 +1,19 @@
 import adapter from '@sveltejs/adapter-static';
-import preprocess from 'svelte-preprocess';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-/** @type {import('@sveltejs/kit').Config} */
+const dev = process.env.NODE_ENV === 'development';
+
 const config = {
-  // Consult https://github.com/sveltejs/svelte-preprocess
-  // for more information about preprocessors
-  preprocess: preprocess(),
-
   kit: {
-    adapter: adapter({
-      pages: 'build',
-      assets: 'build',
-      fallback: '404.html',
-      precompress: false,
-    }),
-    prerender: {
-      origin: 'https://localhost:5173',
+    adapter: adapter(),
+    paths: {
+      base: dev ? '' : '/davidfonseca.dev'
     },
+    prerender: {
+      entries: ['*'] // this replaces `default: true`
+    }
   },
+  preprocess: vitePreprocess()
 };
 
 export default config;
