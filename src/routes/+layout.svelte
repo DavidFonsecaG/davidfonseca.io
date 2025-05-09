@@ -2,8 +2,6 @@
     import '../styles/theme.css';
     import Navigation from '$lib/components/Navigation.svelte';
     import Footer from '$lib/components/Footer.svelte';
-
-    export const prerender = true;
 </script>
   
 <svelte:head>
