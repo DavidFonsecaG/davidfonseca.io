@@ -8,6 +8,7 @@
         variant: {
           default: "bg-primary text-primary-foreground",
           secondary: "bg-white text-secondary-foreground",
+          pastel: "bg-secondary/80 text-secondary-foreground",
           outline: "border bg-background hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
         },
         size: {

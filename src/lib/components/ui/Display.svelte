@@ -22,7 +22,7 @@
             <div class="flex p-1 px-3 rounded-full text-xs bg-gradient-to-r from-indigo-300/30 to-gray-400/20">
             {badgeText}
             </div>
-            <CardTitle className={"text-2xl"}>{title}</CardTitle>
+            <CardTitle className={"text-2xl md:text-3xl lg:text-4xl"}>{title}</CardTitle>
             <CardDescription>{description}</CardDescription>
             <a href={buttonLink}>
                 <Button variant="secondary" size="lg" className="pr-1 cursor-pointer">

@@ -56,9 +56,9 @@
             </div>
             <div class="flex flex-col items-start ">
                 <CardTitle className={"text-sm lg:text-md"}>{year}</CardTitle>
-                <CardTitle className={"text-xl lg:text-2xl"}>{company}</CardTitle>
+                <CardTitle className={"text-lg md:text-xl lg:text-2xl"}>{company}</CardTitle>
                 <CardDescription>
-                    <p>{role}</p>
+                    <p class="text-base md:text-lg">{role}</p>
                     <p class="text-sm text-primary/70">{achivement}</p>
                 </CardDescription>
             </div>

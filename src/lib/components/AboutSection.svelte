@@ -24,7 +24,7 @@
       <CardContent className={"gap-4"}>
         <div class="flex flex-col items-start gap-5">
 
-          <CardTitle>{about.title}</CardTitle>
+          <CardTitle className={"text-3xl lg:text-4xl"}>{about.title}</CardTitle>
           <CardDescription className={"text-primary/70 text-md lg:text-md leading-loose md:leading-relaxed"}>
             {about.description}
           </CardDescription>

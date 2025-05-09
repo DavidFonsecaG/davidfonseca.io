@@ -44,7 +44,7 @@
   </script>
   
   <nav
-	class="flex p-4 h-22 md:p-6 w-full md:max-w-15/16 items-center justify-center sticky top-0 transition-all duration-300"
+	class="z-100 flex p-4 h-22 md:p-6 w-full md:max-w-15/16 items-center justify-center sticky top-0 transition-all duration-300"
 	class:big
 	class:open
   >
@@ -55,7 +55,6 @@
 	>
 	  	<NavTitle on:click={close} />
 		<NavDesktopLinks {scrolled}/>
-		<!-- <NavDesktopLinks {scrolled}/> -->
 		<NavMobileBurger
 		  {open}
 		  on:click={() => {
