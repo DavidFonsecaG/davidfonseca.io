@@ -23,7 +23,7 @@
     <title>David Fonseca</title>
 </svelte:head>
 
-<div class="flex flex-col w-full min-h-screen items-center font-[inter] bg-secondary">
+<div class="flex flex-col w-full min-h-screen items-center ">
     <Navigation />
     <main class="flex flex-col w-full items-center justify-center">
         <slot />

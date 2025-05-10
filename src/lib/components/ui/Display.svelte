@@ -22,13 +22,8 @@
             <img src={imgSrc} alt={imgSrc} class="bg-current/20 rounded-full p-4 w-20 h-20 md:w-30 md:h-30 md:p-0 md:absolute" />
         </div>    
         <div class="flex flex-col items-start text-start w-full md:w-6/8 gap-3">
-            <div class="flex p-1 px-3 rounded-full text-xs bg-transparent">
-                <span class="absolute border blur-sm gradient-text text-transparent">
-                    {badgeText}
-                </span>
-                <p class="relative gradient-text text-transparent animate-gradient">
-                    {badgeText}
-                </p>
+            <div class="flex p-1 px-3 rounded-full text-xs bg-linear-to-r from-indigo-300/30 to-gray-400/20">
+                <p>{badgeText}</p>
             </div>
             <CardTitle className={"text-2xl md:text-3xl lg:text-4xl"}>{title}</CardTitle>
             <CardDescription>{description}</CardDescription>
@@ -44,20 +39,3 @@
     </CardContent>
 </Card>
 
-<style>
-    .gradient-text {
-        background: linear-gradient(
-        to right,
-        #ffffff,
-        #7a7a7a,
-        #7a7a7a,
-        #7a7a7a,
-        #7a7a7a,
-        #7a7a7a,
-        #7a7a7a,
-        #ffffff
-        );
-        background-size: 300% 300%;
-        background-clip: text;
-    }
-</style>

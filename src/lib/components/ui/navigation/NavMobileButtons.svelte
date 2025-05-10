@@ -1,8 +1,8 @@
 <script lang="ts">
     import NavMobileBurger from "./NavMobileBurger.svelte";
     import NavMobileButton from "./NavMobileButton.svelte";
-    export let open: boolean = false;
-    export let scrolled: boolean = false;
+    export let open: boolean;
+    export let scrolled: boolean;
 </script>
 
 <div class="md:hidden flex gap-1">
@@ -11,6 +11,7 @@
         {open}
         on:click={() => {
         open = !open;
+        console.log(open)
         }}
     />
 </div>

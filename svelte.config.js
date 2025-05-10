@@ -16,7 +16,7 @@ const config = {
       base: process.env.NODE_ENV === 'development' ? '' : '/davidfonseca.io'
     },
     prerender: {
-      origin: 'https://davidfonsecag.github.io',
+      origin: 'https://www.davidfonseca.io',
       handleHttpError: 'warn'
     }
   }
