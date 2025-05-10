@@ -14,8 +14,9 @@ const config = {
     }),
     prerender: {
       origin: 'https://www.davidfonseca.io',
-    },
-  },
+      handleHttpError: 'warn'
+    }
+  }
 };
 
 export default config;
