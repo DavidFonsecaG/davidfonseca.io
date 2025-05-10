@@ -6,7 +6,7 @@
     <title>Page not found - David Fonseca</title>
 </svelte:head>
 
-<div class="flex flex-col items-center justify-center text-center px-4 py-15 md:px-6 md:py-30 w-full md:max-w-15/16">
+<div class="flex flex-col items-center justify-center text-center px-4 h-[75vh] w-full md:px-6 md:max-w-15/16">
     <section class="flex flex-col items-center justify-center gap-5">
         <div class="p-1 px-3 border rounded-full text-xs bg-card">404 error</div>    
         <h1 class="text-4xl md:text-6xl font-medium">Page not found</h1>

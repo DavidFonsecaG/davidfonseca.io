@@ -17,10 +17,18 @@
 </script>
   
 <Card variant={cardVariant} className={"p-8 md:p-10"}>
-    <CardContent className="flex flex-col md:flex-row md:flex-row-reverse gap-9 md:gap-4">    
+    <CardContent className="flex flex-col md:flex-row gap-9 md:gap-4">
+        <div class="hidden md:flex md:items-center md:justify-center md:p-4 md:w-2/8 md:relative">
+            <img src={imgSrc} alt={imgSrc} class="bg-current/20 rounded-full p-4 w-20 h-20 md:w-30 md:h-30 md:p-0 md:absolute" />
+        </div>    
         <div class="flex flex-col items-start text-start w-full md:w-6/8 gap-3">
-            <div class="flex p-1 px-3 rounded-full text-xs bg-gradient-to-r from-indigo-300/30 to-gray-400/20">
-            {badgeText}
+            <div class="flex p-1 px-3 rounded-full text-xs bg-transparent">
+                <span class="absolute border blur-sm gradient-text text-transparent">
+                    {badgeText}
+                </span>
+                <p class="relative gradient-text text-transparent animate-gradient">
+                    {badgeText}
+                </p>
             </div>
             <CardTitle className={"text-2xl md:text-3xl lg:text-4xl"}>{title}</CardTitle>
             <CardDescription>{description}</CardDescription>
@@ -33,10 +41,23 @@
                 </Button>
             </a>
         </div>
-
-        <div class="hidden md:flex md:items-center md:justify-center md:p-4 md:w-2/8 md:relative">
-            <img src={imgSrc} alt={imgSrc} class="bg-current/20 rounded-full p-4 w-20 h-20 md:w-30 md:h-30 md:p-0 md:absolute" />
-        </div>
     </CardContent>
 </Card>
-  
+
+<style>
+    .gradient-text {
+        background: linear-gradient(
+        to right,
+        #ffffff,
+        #7a7a7a,
+        #7a7a7a,
+        #7a7a7a,
+        #7a7a7a,
+        #7a7a7a,
+        #7a7a7a,
+        #ffffff
+        );
+        background-size: 300% 300%;
+        background-clip: text;
+    }
+</style>

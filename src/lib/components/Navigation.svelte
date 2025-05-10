@@ -2,9 +2,8 @@
 	import { onMount } from 'svelte';
   
 	import NavDesktopLinks from './ui/navigation/NavDesktopLinks.svelte';
-	import NavMobileBurger from './ui/navigation/NavMobileBurger.svelte';
-	// import NavMobileLinks from './_navigation/NavMobileLinks.svelte';
 	import NavTitle from './ui/navigation/NavTitle.svelte';
+    import NavMobileButtons from './ui/navigation/NavMobileButtons.svelte';
   
 	let body: HTMLElement | undefined = undefined;
   
@@ -49,18 +48,13 @@
 	class:open
   >
 	<div
-	  class="flex items-center justify-between"
+	  class="flex w-full items-center justify-between"
 	  class:nav-glass={!scrolled}
 	  class:nav-glass-scrolled={scrolled}
 	>
 	  	<NavTitle on:click={close} />
-		<NavDesktopLinks {scrolled}/>
-		<NavMobileBurger
-		  {open}
-		  on:click={() => {
-			open = !open;
-		  }}
-		/> 
+		<NavDesktopLinks {scrolled} />
+  		<NavMobileButtons {open} {scrolled}/>
 	</div>
   </nav>
   
@@ -69,4 +63,3 @@
 	<NavMobileLinks {big} on:click={close} />
   </div> 
   -->
-  
