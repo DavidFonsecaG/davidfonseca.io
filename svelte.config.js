@@ -12,14 +12,10 @@ const config = {
       fallback: '404.html',
       precompress: false
     }),
-    paths: {
-      base: process.env.NODE_ENV === 'development' ? '' : '/davidfonseca.io'
-    },
     prerender: {
       origin: 'https://www.davidfonseca.io',
-      handleHttpError: 'warn'
-    }
-  }
+    },
+  },
 };
 
 export default config;
