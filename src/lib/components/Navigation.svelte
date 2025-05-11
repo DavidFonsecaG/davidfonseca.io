@@ -58,7 +58,7 @@ class="flex p-4 h-22 w-full md:p-6 md:max-w-15/16 items-center justify-center st
 
 {#if open}
 	<div 
-		class="fixed w-full top-0 bg-background/80 backdrop-blur-lg z-90" 
+		class="fixed w-full top-0 bg-background/95 backdrop-blur-sm z-90" 
 		class:h-full={open}
 		role="dialog"
 		aria-modal="true"

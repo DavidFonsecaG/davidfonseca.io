@@ -10,9 +10,9 @@
             </svg>
         </div>
         <span 
-            class="transition-all duration-800 overflow-hidden animation-span"
+            class="transition-all duration-500 overflow-hidden animation-span"
         >
-            <p class="font-medium leading-none tracking-tight transition-all duration-300 animation-p"
+            <p class="font-medium leading-none tracking-tight transition-all duration-500 animation-p"
             >David Fonseca</p>
         </span>
     </a>
