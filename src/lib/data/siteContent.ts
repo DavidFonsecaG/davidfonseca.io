@@ -43,7 +43,7 @@ export const experiences = [
     year: "2021 - 2021",
     company: "Technological University of Pereira", 
     role: "Certificate in Web Development", 
-    achivement: "Some text here",
+    achivement: "GPA 4.0",
     type: "education"
   },
   { 
@@ -56,10 +56,10 @@ export const experiences = [
   },
   { 
     imgSrc: "nasa_tops.jpg",
-    year: "2024",
+    year: "2024 - 2024",
     company: "NASA TOPS project", 
     role: "Member", 
-    achivement: "Nominated by NLU",
+    achivement: "Open science 101 - Nominated by NLU",
     type: "organization"
   },
   { 

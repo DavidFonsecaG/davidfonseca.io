@@ -12,6 +12,7 @@
             secondary: "bg-current/20 hover:bg-current/10",
             ghost: "hover:text-blue-500 dark:hover:bg-accent/50",
             link: "underline-offset-4 hover:underline",
+            burger: "bg-transparent",
           },
           size: {
             default: "h-9 px-4 py-2 has-[>svg]:px-3",

@@ -18,32 +18,22 @@
 
     let color: string;
     let label: string | undefined = undefined;
-    let colorLabel: string;
-
-    let colors = {
-        work: "red-500",
-        organization: "yellow-500",
-        education: "indigo-500",
-    }
 
     switch (type) {
-        case 'work':
-            color = "bg-" + colors.work;
-            if (!prev) 
-                label = 'WORK';
-                colorLabel = "text-" + colors.work;
-            break;
-        case 'organization':
-            color = "bg-" + colors.organization;
-            if (!prev) 
-                label = 'ORGANIZATIONS';
-                colorLabel = "text-" + colors.organization;
-        break;
         case 'education':
-            color = "bg-" + colors.education;
+            color = "bg-indigo-500";
             if (!prev) 
                 label = 'EDUCATION';
-                colorLabel = "text-" + colors.education;
+            break;
+        case 'organization':
+            color = "bg-yellow-500";
+            if (!prev) 
+                label = 'ORGANIZATIONS';
+            break;
+        case 'work':
+            color = "bg-pink-500";
+            if (!prev) 
+                label = 'WORK';
             break;
     }
 </script>
@@ -71,8 +61,8 @@
             {#if next}
                 <div class={cn(color, "absolute bottom-0 h-1/2 w-1.5")}></div>
             {/if}
-            {#if label}
-                <p class={cn(colorLabel, "hidden absolute lg:inline right-7 text-sm font-semibold")}>{label}</p>
+            {#if !prev}
+                <p class={cn(color, "hidden absolute bg-clip-text text-transparent lg:inline right-7 text-sm font-semibold")}>{label}</p>
             {/if}
         </div>
     </CardContent>
