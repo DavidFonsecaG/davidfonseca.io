@@ -8,7 +8,9 @@
         variant: {
           default: "bg-primary text-primary-foreground",
           secondary: "bg-white text-secondary-foreground",
-          pastel: "bg-gradient-to-r from-blue-200/30 to-cyan-200/30 text-secondary-foreground",
+          pastel_1: "bg-blue-200/50 text-secondary-foreground",
+          pastel_2: "bg-gray-200/50 text-secondary-foreground",
+          pastel_3: "bg-violet-200/50 text-secondary-foreground",
           outline: "border bg-background hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
         },
         size: {

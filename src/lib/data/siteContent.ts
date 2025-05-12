@@ -3,7 +3,7 @@ export const hero = {
     subtitle: "I’m a software engineer passionate about building fast, beautiful applications and websites.",
 };
 
-export const projects = [
+export const pinnedProjects = [
   {
     title: "AI Powered Email Assistant",
     description: "An AI-powered email assistant that connects to Outlook to summarize emails, show past context, and suggest replies.",
@@ -11,7 +11,7 @@ export const projects = [
     badgeText: "Retrieval Augmented Generation",
     cardVariant: "default",
     buttonText: "Learn more",
-    buttonLink: "/email-ai"
+    buttonLink: "email-ai"
   },
   {
     title: "Mapping wildfires using AVIRIS",
@@ -20,7 +20,7 @@ export const projects = [
     badgeText: "Raster - Tiff",
     cardVariant: "secondary",
     buttonText: "Learn more",
-    buttonLink: "/mapping-wildfire"
+    buttonLink: "mapping-wildfire"
   }
 ] as const;
 
@@ -87,3 +87,52 @@ export const experiences = [
     type: "work"
   },
 ] as const;
+
+export const projects = {
+  applications: [
+    {
+      title: "AI Powered Email Assistant",
+      description: "An AI-powered email assistant that connects to Outlook to summarize emails, show past context, and suggest replies.",
+      cardVariant: "pastel_2",
+      buttonLink: "email-ai"
+    },
+    {
+      title: "Mapping Wildfires using AVIRIS",
+      description: "Utilizes satellite imagery (AVIRIS) to detect and map wildfire burn areas with geospatial processing and machine learning.",
+      cardVariant: "pastel_1",
+      buttonLink: "mapping-wildfire"
+    },
+    {
+      title: "Queue Management System",
+      description: "A system to manage customer queues efficiently, allowing users to take numbers and receive notifications when it's their turn.",
+      cardVariant: "pastel_2",
+      buttonLink: "queue-management-system"
+    },
+    {
+      title: "Applicant Submission App",
+      description: "A web application designed to streamline the applicant submission process.",
+      cardVariant: "pastel_2",
+      buttonLink: "applicant-submission-app"
+    },
+    {
+      title: "Personal Portfolio",
+      description: "A personal portfolio website built with Svelte to showcase projects and skills.",
+      cardVariant: "pastel_3",
+      buttonLink: "personal-portfolio"
+    }
+  ] as const,
+  analytics: [
+    {
+      title: "Palisades Fire Mapping",
+      description: "Focuses on mapping burned areas from wildfires using hyperspectral data, enhancing disaster response strategies.",
+      cardVariant: "pastel_1",
+      buttonLink: "palisades-fire-mapping"
+    },
+    {
+      title: "Music Trends During Election Cycles",
+      description: "Analyzed Spotify data to explore how music popularity, danceability, and genres shift during U.S. election years.",
+      cardVariant: "pastel_2",
+      buttonLink: "spotify-election-trends"
+    }
+  ] as const,
+} as const;

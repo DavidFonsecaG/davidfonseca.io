@@ -1,10 +1,10 @@
 <script lang="ts">
     import Display from "$lib/components/ui/Display.svelte";
-    import { projects } from "$lib/data/siteContent";
+    import { pinnedProjects } from "$lib/data/siteContent";
 </script>
 
 <section id="projects" class="flex flex-col w-full text-card gap-5">
-    {#each projects as project (project.title)}
+    {#each pinnedProjects as project (project.title)}
       <Display {...project} />
     {/each}
 

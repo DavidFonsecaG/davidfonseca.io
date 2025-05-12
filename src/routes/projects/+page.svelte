@@ -1,5 +1,7 @@
 <script lang="ts">
     import { projects } from "$lib/data/siteContent";
+    const projectSections = Object.entries(projects);
+
     import {
         Card,
         CardTitle,
@@ -19,32 +21,37 @@
             <CardTitle className={"text-4xl md:text-5xl"}><h2>My Projects</h2></CardTitle>
             <CardDescription className="text-md"><p>Here you can find the projects I've created or am working on</p></CardDescription>
         </CardContent>
-        <div class="h-62 md:w-2/5 bg-[url(/snap.png)] bg-cover bg-center rounded-xl"></div>
+        <div class="h-62 md:w-2/5 bg-[url(/snap.png)] bg-cover bg-left rounded-xl"></div>
     </Card>
 
     <Card variant="secondary" className={"px-8 gap-20 md:px-16 md:py-18"}>
+        {#each projectSections as [sectionName, sectionProjects]}
         <CardContent className="flex flex-col gap-5">
             <div class="flex flex-col w-full text-start gap-4">
-                <CardTitle className={"text-2xl md:text-3xl "}>
-                    <h2>Applications</h2>
+                <CardTitle className="text-2xl md:text-3xl">
+                <h2>{sectionName.charAt(0).toUpperCase() + sectionName.slice(1)}</h2>
                 </CardTitle>
-                <CardDescription className="text-md"><p>Desktop, mobile, and web applications I've created or am working on</p></CardDescription>
+                <CardDescription className="text-md">
+                <p>Desktop, mobile, and web applications I've created or am working on</p>
+                </CardDescription>
             </div>
-            <div class="flex grid md:grid-cols-2 gap-7 w-full text-card">
-                {#each projects as project (project.buttonLink)}
-                <a href={project.buttonLink}>
-                    <Card variant="pastel" className={"backdrop-blur-xs h-40 p-6 md:p-8 items-center justify-center shadow transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-101 hover:shadow-lg"}>
-                        <CardContent className="flex flex-col">    
-                            <div class="flex flex-col items-start text-start w-full gap-3">
-                                <CardTitle className={"text-xl md:text-2xl"}>{project.title}</CardTitle>
-                                <CardDescription className="text-sm lg:text-sm">{project.description}</CardDescription>
-                            </div>
-                        </CardContent>
+
+            <div class="grid md:grid-cols-2 gap-7 text-card">
+                {#each sectionProjects as project (project.buttonLink)}
+                <a href={`/projects/${project.buttonLink}`}>
+                    <Card variant={project.cardVariant} className="p-6 md:p-8 items-center justify-center transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-101 hover:shadow-lg">
+                    <CardContent className="flex flex-col">
+                        <div class="flex flex-col items-start text-start w-full gap-3">
+                        <CardTitle className="font-medium text-lg md:text-xl">{project.title}</CardTitle>
+                        <CardDescription className="font-light text-sm lg:text-sm">{project.description}</CardDescription>
+                        </div>
+                    </CardContent>
                     </Card>
                 </a>
                 {/each}
             </div>
         </CardContent>
+        {/each}
 
         <div class="flex flex-wrap justify-center m-2">
             <a href="https://github.com/DavidFonsecaG" class="inline-flex items-center justify-center gap-2 bg-transparent hover:text-blue-500 text-muted-foreground text-lg" target="_blank">

@@ -27,7 +27,7 @@
             </div>
             <CardTitle className={"text-2xl md:text-3xl lg:text-4xl"}>{title}</CardTitle>
             <CardDescription>{description}</CardDescription>
-            <a href={buttonLink}>
+            <a href={`/projects/${buttonLink}`}>
                 <Button variant="secondary" size="lg" className="pr-1 cursor-pointer">
                     {buttonText}
                     <span class="inline-flex items-center justify-center size-9 bg-secondary-foreground rounded-md">
