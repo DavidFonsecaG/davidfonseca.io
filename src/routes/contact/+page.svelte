@@ -1,23 +1,61 @@
 <script lang="ts">
-  import Button from "$lib/components/ui/Button.svelte";
+  import Card from "$lib/components/ui/card/Card.svelte";
+  import CardContent from "$lib/components/ui/card/CardContent.svelte";
+  import CardDescription from "$lib/components/ui/card/CardDescription.svelte";
+  import CardTitle from "$lib/components/ui/card/CardTitle.svelte";
 </script>
 
 <svelte:head>
-    <title>Page in Progress - David Fonseca</title>
+    <title>Contact - David Fonseca</title>
 </svelte:head>
 
-<div class="flex flex-col items-center justify-center text-center px-4 h-[75vh] w-full md:px-6 md:max-w-15/16">
+<div class="flex flex-col items-center justify-center text-center px-4 py-16 md:py-32 h-full w-full gap-20 md:gap-32 md:px-6 md:max-w-15/16">
     <section class="flex flex-col items-center justify-center gap-5">
-        <div class="p-1 px-3 border rounded-full text-xs bg-card">Under Construction</div>    
-        <h1 class="text-4xl md:text-6xl font-medium">This page is coming soon</h1>
+        <div class="p-1 px-3 border rounded-full text-xs bg-card">Reach Out</div>    
+        <h1 class="text-4xl md:text-6xl font-medium">Get in touch with me</h1>
         <p class="text-md max-w-xl text-primary/70 md:text-lg">
-            Thanks for stopping by. I'm currently building this page and will publish it soon.
+            Contact me for inquiries of all kinds.
         </p>
-        <a href="/" class="w-full">
-            <Button size="lg" className="w-full cursor-pointer">
-                <svg height="16" stroke-linejoin="round" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 6.56062L8.00001 2.06062L3.50001 6.56062V13.5L6.00001 13.5V11C6.00001 9.89539 6.89544 8.99996 8.00001 8.99996C9.10458 8.99996 10 9.89539 10 11V13.5L12.5 13.5V6.56062ZM13.78 5.71933L8.70711 0.646409C8.31659 0.255886 7.68342 0.255883 7.2929 0.646409L2.21987 5.71944C2.21974 5.71957 2.21961 5.7197 2.21949 5.71982L0.469676 7.46963L-0.0606537 7.99996L1.00001 9.06062L1.53034 8.53029L2.00001 8.06062V14.25V15H2.75001L6.00001 15H7.50001H8.50001H10L13.25 15H14V14.25V8.06062L14.4697 8.53029L15 9.06062L16.0607 7.99996L15.5303 7.46963L13.7806 5.71993C13.7804 5.71973 13.7802 5.71953 13.78 5.71933ZM8.50001 11V13.5H7.50001V11C7.50001 10.7238 7.72386 10.5 8.00001 10.5C8.27615 10.5 8.50001 10.7238 8.50001 11Z" fill="currentColor"></path></svg>
-                Back go home
-            </Button>
-        </a>
+    </section>
+    <section class="flex flex-col md:flex-row w-full items-center gap-3">
+        <Card variant="secondary" className="bg-primary/5 p-2 w-full md:w-1/2">
+            <Card variant="secondary" className="p-6 rounded-2xl border border-primary/20">
+                <CardContent className="flex flex-col gap-5 text-primary items-start">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                    </div>
+                    <div class="pb-2">
+                        <CardTitle className="text-xl font-medium">Message Me</CardTitle>
+                    </div>
+                    <div class="border-b w-full"></div>
+                    <div>
+                        <CardDescription>
+                            <a href="mailto:support@davidfonseca.io" class="text-sm font-medium hover:text-blue-500"
+                            title="Send me an email">support@davidfonseca.io</a>
+                        </CardDescription>
+                    </div>
+                </CardContent>
+            </Card>
+        </Card>
+
+        <Card variant="secondary" className="bg-primary/5 p-2 w-full md:w-1/2">
+            <Card variant="secondary" className="p-6 rounded-2xl border border-primary/20">
+                <CardContent className="flex flex-col gap-5 text-primary items-start">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    </div>
+                    <div class="pb-2">
+                        <CardTitle className="text-xl font-medium">Connect with me on GitHub</CardTitle>
+                    </div>
+                    <div class="border-b w-full"></div>
+                    <div>
+                        <CardDescription>
+                            <a href="https://github.com/DavidFonsecaG" class="text-sm font-medium hover:text-blue-500"
+                            title="Visit my GitHub profile">DavidFonsecaG</a>
+                        </CardDescription>
+                    </div>
+                </CardContent>
+            </Card>
+        </Card>
     </section>
 </div>

@@ -38,7 +38,7 @@
     }
 </script>
 
-<Card variant={"secondary"} className={"p-0 w-full md:px-10 md:w-7/8 md:h-[164px]"}>
+<Card variant={"secondary"} className={"p-0 w-full md:h-[164px] lg:max-w-[800px]"}>
     <CardContent className={"h-full gap-3"}>
         <div class="flex flex-col w-full py-6 md:py-8 gap-2 md:gap-5 md:flex-row">
             <div class="flex md:p-2 md:items-center md:justify-center ">

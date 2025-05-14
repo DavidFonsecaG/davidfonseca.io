@@ -3,7 +3,7 @@
     export let scrolled: boolean;
 </script>
   
-<div class="hidden gap-1 md:flex">
+<div class="hidden gap-1 md:flex" class:gap-3={!scrolled}>
     <NavTextLinks {scrolled}/>
     <!-- svelte-ignore a11y_consider_explicit_label -->
     <a class="inline-flex items-center justify-center rounded-md outline-none min-w-9 size-9 desktop-links-button" href="https://github.com/DavidFonsecaG" target="_blank">

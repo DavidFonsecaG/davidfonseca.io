@@ -58,7 +58,7 @@ class="flex p-4 h-22 w-full md:p-6 md:max-w-15/16 items-center justify-center st
 
 {#if open}
 	<div 
-		class="fixed w-full top-0 bg-background/95 backdrop-blur-sm z-90" 
+		class="fixed w-full top-0 bg-background/90 backdrop-blur-sm z-90" 
 		class:h-full={open}
 		role="dialog"
 		aria-modal="true"
@@ -69,7 +69,7 @@ class="flex p-4 h-22 w-full md:p-6 md:max-w-15/16 items-center justify-center st
 			<div class="relative top-22 p-4">
 				<Card variant="default" className="items-start rounded-xl gap-10">
 					<NavTextLinks scrolled={false} className={"flex-col gap-4 text-lg"}/>				
-					<div class="w-full">
+					<div class="w-full px-2">
 						<FooterLegal />
 					</div>
 				</Card>

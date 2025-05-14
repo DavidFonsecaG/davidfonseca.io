@@ -1,9 +1,12 @@
-<script>
+<script lang="ts">
     import Button from "./Button.svelte";
+    export let showCopyrights: Boolean = false;
 </script>
 
-<div class="flex pt-8 border-t border-muted-foreground/50 text-muted-foreground text-sm tracking-tighter justify-between">
+<div class="flex flex-col md:flex-row gap-8 pt-8 border-t border-muted-foreground/50 text-muted-foreground text-sm tracking-tighter md:justify-between">
+    {#if showCopyrights}
     <div class="flex"><p class="">© 2025 David Fonseca</p></div>
+    {/if}
     <div class="flex gap-3">
         <a href="https://linkedin.com/in/david-fonseca2" class="inline-flex items-center justify-center" target="_blank">
             <Button className={"w-4 h-4 cursor-pointer"} variant={"ghost"}>

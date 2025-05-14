@@ -29,7 +29,7 @@
             {about.description}
           </CardDescription>
 
-          <div class="flex flex-col w-full items-center justify-center mt-6">
+          <div class="flex flex-col mt-6 w-full items-center justify-center">
             {#each enrichedExperiences as experience (experience.company)}
               <Experience {...experience}/>
             {/each}

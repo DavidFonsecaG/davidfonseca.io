@@ -4,8 +4,8 @@
 
 <div class="w-full">
     <footer class="w-full p-2">
-        <div class="flex w-full bg-primary rounded-3xl items-center justify-center ">
-            <div class="flex flex-col w-full p-8 md:6 pt-12 bg-primary rounded-3xl space-between font-normal gap-10 md:max-w-15/16">
+        <div class="flex w-full bg-primary rounded-2xl md:rounded-3xl items-center justify-center ">
+            <div class="flex flex-col w-full p-8 md:6 md:pt-12 bg-primary rounded-3xl space-between font-normal gap-10 md:max-w-15/16">
                 <div class="flex flex-col text-card gap-10 md:flex-row md:justify-between">
                     <div class="flex flex-col w-full gap-5">
                         <div>
@@ -28,7 +28,7 @@
                     </div>
                 </div>
 
-                <FooterLegal />
+                <FooterLegal showCopyrights={true}/>
             </div>
         </div>
     </footer>
