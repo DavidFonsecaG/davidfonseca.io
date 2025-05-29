@@ -13,7 +13,7 @@
     export let badgeText = "";
     export let cardVariant: "secondary" | "default" | "outline";
     export let buttonText = "";
-    export let buttonLink = "#";
+    export let buttonLink = "";
 </script>
   
 <Card variant={cardVariant} className={"p-8 md:p-10"}>
@@ -27,7 +27,7 @@
             </div>
             <CardTitle className={"text-2xl md:text-3xl lg:text-4xl"}>{title}</CardTitle>
             <CardDescription>{description}</CardDescription>
-            <a href={`/projects/${buttonLink}`}>
+            <a href={buttonLink} target="_blank">
                 <Button variant="secondary" size="lg" className="pr-1 cursor-pointer">
                     {buttonText}
                     <span class="inline-flex items-center justify-center size-9 bg-secondary-foreground rounded-md">

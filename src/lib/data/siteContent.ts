@@ -11,7 +11,7 @@ export const pinnedProjects = [
     badgeText: "Retrieval Augmented Generation",
     cardVariant: "default",
     buttonText: "Learn more",
-    buttonLink: "email-ai"
+    buttonLink: "/projects/email-ai"
   },
   {
     title: "Mapping wildfires using AVIRIS",
@@ -20,7 +20,7 @@ export const pinnedProjects = [
     badgeText: "Raster - Tiff",
     cardVariant: "secondary",
     buttonText: "Learn more",
-    buttonLink: "mapping-wildfire"
+    buttonLink: "https://ciesin-geospatial.github.io/TOPSTSCHOOL-disasters/m304a-viirs-wildfires.html"
   }
 ] as const;
 

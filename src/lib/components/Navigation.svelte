@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-  
+
 	import NavDesktopLinks from './ui/navigation/NavDesktopLinks.svelte';
 	import NavTitle from './ui/navigation/NavTitle.svelte';
     import NavMobileButtons from './ui/navigation/NavMobileButtons.svelte';
 	import Card from './ui/card/Card.svelte';
   	import NavTextLinks from './ui/navigation/NavTextLinks.svelte';
-  import FooterLegal from './ui/FooterLegal.svelte';
+  	import FooterLegal from './ui/FooterLegal.svelte';
   
 	let body: HTMLElement | undefined = undefined;
   
