@@ -21,7 +21,7 @@
             <CardTitle className={"text-4xl md:text-5xl"}><h2>My Projects</h2></CardTitle>
             <CardDescription className="text-md"><p>Here you can find the projects I've created or am working on</p></CardDescription>
         </CardContent>
-        <div class="h-62 md:w-2/5 bg-[url(/snap.png)] bg-cover bg-top-left rounded-xl"></div>
+        <div class="h-62 md:w-2/5 bg-[url(/images/snap.png)] bg-cover bg-top-left rounded-xl"></div>
     </Card>
 
     <Card variant="secondary" className={"px-8 gap-14 md:gap-20 md:px-16 md:py-18"}>

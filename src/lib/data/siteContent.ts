@@ -31,7 +31,7 @@ export const about = {
 
 export const experiences = [
   { 
-    imgSrc: "nlu.jpg",
+    imgSrc: "images/nlu.jpg",
     year: "2022 - 2025",
     company: "National Louis University", 
     role: "Bachelor of Science, Computer Science", 
@@ -39,7 +39,7 @@ export const experiences = [
     type: "education"
   },
   { 
-    imgSrc: "utp.jpg",
+    imgSrc: "images/utp.jpg",
     year: "2021 - 2021",
     company: "Technological University of Pereira", 
     role: "Certificate in Web Development", 
@@ -47,7 +47,7 @@ export const experiences = [
     type: "education"
   },
   { 
-    imgSrc: "mcc.jpg",
+    imgSrc: "images/mcc.jpg",
     year: "2019 - 2021",
     company: "Midwestern Career College", 
     role: "Business Administration", 
@@ -55,7 +55,7 @@ export const experiences = [
     type: "education"
   },
   { 
-    imgSrc: "nasa_tops.jpg",
+    imgSrc: "images/nasa_tops.jpg",
     year: "2024 - 2024",
     company: "NASA TOPS project", 
     role: "Member", 
@@ -63,7 +63,7 @@ export const experiences = [
     type: "organization"
   },
   { 
-    imgSrc: "nsls.jpg",
+    imgSrc: "images/nsls.jpg",
     year: "2023 - 2025",
     company: "Society of Leadership and Success", 
     role: "Member", 
@@ -71,7 +71,7 @@ export const experiences = [
     type: "organization"
   },
   { 
-    imgSrc: "columbia_university.jpg",
+    imgSrc: "images/columbia_university.jpg",
     year: "2024 - 2025",
     company: "Columbia University", 
     role: "Research Intern", 
@@ -79,7 +79,7 @@ export const experiences = [
     type: "work"
   },
   { 
-    imgSrc: "mcc.jpg",
+    imgSrc: "images/mcc.jpg",
     year: "2019 - 2021",
     company: "Midwestern Career College.", 
     role: "International Admissions", 
