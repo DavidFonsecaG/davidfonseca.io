@@ -1,25 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/images/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta property="og:type" content="website" />
-		<meta property="og:image" content="%sveltekit.assets%/images/favicon.png" />
-		
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-FM98F1R1MM"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%sveltekit.assets%/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="%sveltekit.assets%/images/favicon.png" />
 
-			gtag('config', 'G-FM98F1R1MM');
-		</script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FM98F1R1MM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-		%sveltekit.head%
-	</head>
-	<body>
-		<div id="site-content">%sveltekit.body%</div>
-	</body>
+      gtag("config", "G-FM98F1R1MM");
+    </script>
+
+    %sveltekit.head%
+  </head>
+  <body>
+    <div id="site-content">%sveltekit.body%</div>
+  </body>
 </html>
