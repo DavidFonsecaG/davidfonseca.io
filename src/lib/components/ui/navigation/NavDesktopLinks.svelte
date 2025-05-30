@@ -3,11 +3,14 @@
   export let scrolled: boolean;
 </script>
 
-<div class="hidden gap-1 md:flex" class:gap-3={!scrolled}>
+<div class={`hidden md:flex ${!scrolled ? "gap-3" : "gap-1"}`}>
   <NavTextLinks {scrolled} />
   <!-- svelte-ignore a11y_consider_explicit_label -->
   <a
-    class="inline-flex items-center justify-center rounded-md outline-none min-w-9 size-9 desktop-links-button"
+    class={`inline-flex items-center justify-center rounded-md outline-none min-w-9 size-9 ${!scrolled 
+    ? "text-primary-foreground bg-primary"
+    : "bg-white"
+    }`}
     href="https://github.com/DavidFonsecaG"
     target="_blank"
   >

@@ -6,7 +6,7 @@
   export let className: string = "";
 </script>
 
-<ul class={cn("flex gap-2 items-center", className)} class:menu-bg={scrolled}>
-  <NavTextLink {scrolled} to="/projects" title="Projects" on:click />
-  <NavTextLink {scrolled} to="/contact" title="Contact" on:click />
+<ul class={cn(`flex gap-2 items-center ${scrolled && "bg-primary text-white text-sm rounded-md size-9 w-full px-4"}`, className)} >
+  <NavTextLink to="/projects" title="Projects" />
+  <NavTextLink to="/contact" title="Contact" />
 </ul>

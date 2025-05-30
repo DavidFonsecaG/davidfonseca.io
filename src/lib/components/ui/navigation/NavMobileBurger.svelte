@@ -9,8 +9,7 @@
 
 <div class="md:hidden">
   <button
-    class:bg-white={scrolled}
-    class="flex flex-col gap-1 p-2 size-9 cursor-pointer items-center justify-center rounded-md text-sm font-medium min-w-9"
+    class={`flex flex-col gap-1 p-2 size-9 cursor-pointer items-center justify-center rounded-md text-sm font-medium min-w-9 ${scrolled && "bg-white"}`}
     aria-label="burger-menu"
     on:click={handleToggle}
   >

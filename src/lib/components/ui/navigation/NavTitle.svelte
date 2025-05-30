@@ -1,4 +1,5 @@
 <script lang="ts">
+  export let scrolled: boolean;
 </script>
 
 <div class="flex w-auto">
@@ -17,9 +18,15 @@
         />
       </svg>
     </div>
-    <span class="transition-all duration-500 overflow-hidden animation-span">
+    <span class={`transition-all duration-500 overflow-hidden ${!scrolled 
+    ? "w-fit opacity-100 ml-2"
+    : "w-0 opacity-0"
+    }`}>
       <p
-        class="font-medium leading-none tracking-tight transition-all duration-500 animation-p"
+        class={`font-medium leading-none tracking-tight transition-all duration-500 ${!scrolled
+        ? "text-xl md:text-2xl"
+        : "text-[0px]"
+        }`}
       >
         David Fonseca
       </p>

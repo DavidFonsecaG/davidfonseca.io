@@ -1,23 +1,23 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter-Light.ttf") format("truetype");
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Light.ttf') format('truetype');
   font-weight: 300;
 }
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter-Regular.ttf") format("truetype");
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter-Medium.ttf") format("truetype");
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Medium.ttf') format('truetype');
   font-weight: 500;
 }
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter-SemiBold.ttf") format("truetype");
+  font-family: 'Inter';
+  src: url('/fonts/Inter-SemiBold.ttf') format('truetype');
   font-weight: 600;
 }
 
@@ -129,42 +129,6 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-.nav-glass {
-  @apply w-full transition-all duration-500 rounded-lg ease-in-out scale-100;
-
-  .animation-span {
-    @apply w-fit opacity-100 ml-2;
-  }
-
-  .animation-p {
-    @apply text-xl md:text-2xl;
-  }
-
-  .desktop-links-button {
-    @apply text-primary-foreground bg-primary;
-  }
-}
-
-.nav-glass-scrolled {
-  @apply w-52 sm:w-67 transition-all duration-500 ease-in-out scale-120 bg-current/30 backdrop-blur-xs p-1 rounded-lg gap-1;
-
-  .animation-span {
-    @apply w-0 opacity-0;
-  }
-
-  .animation-p {
-    @apply text-[0px];
-  }
-
-  .menu-bg {
-    @apply bg-primary text-white text-sm rounded-md size-9 w-full px-4;
-  }
-
-  .desktop-links-button {
-    @apply bg-white;
-  }
-}
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -174,3 +138,4 @@
     @apply bg-background text-foreground;
   }
 }
+

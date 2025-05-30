@@ -48,11 +48,12 @@
   class="flex p-4 h-22 w-full md:p-6 md:max-w-15/16 items-center justify-center sticky top-0 z-100 transition-all duration-300"
 >
   <div
-    class="flex w-full items-center justify-between"
-    class:nav-glass={!scrolled}
-    class:nav-glass-scrolled={scrolled}
+    class={`flex items-center justify-between ${!scrolled 
+    ? "w-full transition-all duration-500 rounded-lg ease-in-out scale-100" 
+    : "w-52 sm:w-67 transition-all duration-500 ease-in-out scale-120 bg-current/30 backdrop-blur-xs p-1 rounded-lg gap-1"
+    }`}
   >
-    <NavTitle />
+    <NavTitle {scrolled} />
     <NavMobileButtons bind:open {scrolled} />
     <NavDesktopLinks {scrolled} />
   </div>

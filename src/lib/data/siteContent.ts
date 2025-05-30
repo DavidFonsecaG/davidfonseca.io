@@ -14,17 +14,19 @@ export const pinnedProjects = [
     cardVariant: "default",
     buttonText: "Learn more",
     buttonLink: "/projects/email-ai",
+    target: "_self"
   },
   {
     title: "Mapping wildfires using AVIRIS",
     description:
-      "An AI-powered email assistant that connects to Outlook to summarize emails, show past context, and suggest replies.",
+      "A wildfire mapping tool that uses AVIRIS hyperspectral data and fire detections to identify and visualize burned areas.",
     imgSrc: "/icons/earth.svg",
     badgeText: "Raster - Tiff",
     cardVariant: "secondary",
     buttonText: "Learn more",
     buttonLink:
       "https://ciesin-geospatial.github.io/TOPSTSCHOOL-disasters/m304a-viirs-wildfires.html",
+    target: "_blank"
   },
 ] as const;
 
@@ -79,7 +81,7 @@ export const experiences = [
     imgSrc: "images/columbia_university.jpg",
     year: "2024 - 2025",
     company: "Columbia University",
-    role: "Research Intern",
+    role: "Software Developer Intern",
     achivement:
       "Internship through NLU in collaboration with NASA for the TOPS project",
     type: "work",
