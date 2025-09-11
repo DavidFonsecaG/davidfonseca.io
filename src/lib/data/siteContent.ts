@@ -25,7 +25,7 @@ export const pinnedProjects = [
     cardVariant: "secondary",
     buttonText: "Learn more",
     buttonLink:
-      "https://ciesin-geospatial.github.io/TOPSTSCHOOL-disasters/m304a-viirs-wildfires.html",
+      "https://github.com/DavidFonsecaG/palisades-fire-mapping-aviris-viirs/blob/main/notebooks/mapping_wildfires.ipynb",
     target: "_blank"
   },
 ] as const;
