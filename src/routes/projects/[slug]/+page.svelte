@@ -18,7 +18,7 @@
       Thanks for stopping by. I'm currently building this page and will publish
       it soon.
     </p>
-    <a href="/" class="w-full">
+    <a href="/projects" class="w-full">
       <Button size="lg" className="w-full cursor-pointer">
         <svg height="16" stroke-linejoin="round" viewBox="0 0 16 16" width="16"
           ><path
@@ -28,7 +28,7 @@
             fill="currentColor"
           ></path></svg
         >
-        Back go home
+        Back to projects
       </Button>
     </a>
   </section>

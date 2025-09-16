@@ -138,16 +138,16 @@ export const projects = {
       description:
         "A system to manage customer queues efficiently, allowing users to take numbers and receive notifications when it's their turn.",
       cardVariant: "pastel_2",
-      buttonLink: "https://davidfonseca.io/projects/queue-management-system",
-      target: "_blank",      
+      buttonLink: "/projects/queue-management-system",
+      target: "_self",      
     },
     {
       title: "Applicant Submission App",
       description:
         "A web application designed to streamline the applicant submission process.",
       cardVariant: "pastel_2",
-      buttonLink: "https://davidfonseca.io/projects/applicant-submission-app",
-      target: "_blank",      
+      buttonLink: "/projects/applicant-submission-app",
+      target: "_self",      
     },
     {
       title: "Personal Portfolio",

@@ -52,8 +52,10 @@
           </CardTitle>
           <CardDescription className="text-md">
             <p>
-              Desktop, mobile, and web applications I've created or am working
-              on
+              {sectionName === "applications" 
+                ? `Desktop, mobile, and web applications I've created or am working on` 
+                : `Data analysis projects I've worked on`
+              }
             </p>
           </CardDescription>
         </div>
