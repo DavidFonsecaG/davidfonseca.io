@@ -6,15 +6,15 @@ export const hero = {
 
 export const pinnedProjects = [
   {
-    title: "AI Powered Email Assistant",
+    title: "Trackly",
     description:
-      "An AI-powered email assistant that connects to Outlook to summarize emails, show past context, and suggest replies.",
-    imgSrc: "/icons/at-sign.svg",
-    badgeText: "Retrieval Augmented Generation",
+      "A lightweight tool to help admissions counselors easily manage and track student documents throughout the admissions process.",
+    imgSrc: "/icons/hexagon.svg",
+    badgeText: "Full-Stack",
     cardVariant: "default",
     buttonText: "Learn more",
-    buttonLink: "/projects/email-ai",
-    target: "_self"
+    buttonLink: "https://trackly-mcc.vercel.app/",
+    target: "_blank"
   },
   {
     title: "Mapping wildfires using AVIRIS",
@@ -28,6 +28,17 @@ export const pinnedProjects = [
       "https://github.com/DavidFonsecaG/palisades-fire-mapping-aviris-viirs/blob/main/notebooks/mapping_wildfires.ipynb",
     target: "_blank"
   },
+  // {
+  //   title: "AI Powered Email Assistant",
+  //   description:
+  //     "An AI-powered email assistant that connects to Outlook to summarize emails, show past context, and suggest replies.",
+  //   imgSrc: "/icons/at-sign.svg",
+  //   badgeText: "Retrieval Augmented Generation",
+  //   cardVariant: "secondary",
+  //   buttonText: "Learn more",
+  //   buttonLink: "/projects/email-ai",
+  //   target: "_self"
+  // },
 ] as const;
 
 export const about = {
@@ -99,39 +110,52 @@ export const experiences = [
 export const projects = {
   applications: [
     {
+      title: "Trackly",
+      description:
+        "A lightweight tool to help admissions counselors easily manage and track student documents throughout the admissions process.",
+      cardVariant: "pastel_2",
+      buttonLink: "https://trackly-mcc.vercel.app",
+      target: "_blank",
+    },
+    {
       title: "AI Powered Email Assistant",
       description:
         "An AI-powered email assistant that connects to Outlook to summarize emails, show past context, and suggest replies.",
-      cardVariant: "pastel_2",
-      buttonLink: "email-ai",
+      cardVariant: "pastel_1",
+      buttonLink: "https://github.com/DavidFonsecaG/email-assistant",
+      target: "_blank",      
     },
     {
       title: "Mapping Wildfires using AVIRIS",
       description:
         "Utilizes satellite imagery (AVIRIS) to detect and map wildfire burn areas with geospatial processing and machine learning.",
       cardVariant: "pastel_1",
-      buttonLink: "mapping-wildfire",
+      buttonLink: "https://github.com/DavidFonsecaG/palisades-fire-mapping-aviris-viirs/blob/main/notebooks/mapping_wildfires.ipynb",
+      target: "_blank",      
     },
     {
       title: "Queue Management System",
       description:
         "A system to manage customer queues efficiently, allowing users to take numbers and receive notifications when it's their turn.",
       cardVariant: "pastel_2",
-      buttonLink: "queue-management-system",
+      buttonLink: "https://davidfonseca.io/projects/queue-management-system",
+      target: "_blank",      
     },
     {
       title: "Applicant Submission App",
       description:
         "A web application designed to streamline the applicant submission process.",
       cardVariant: "pastel_2",
-      buttonLink: "applicant-submission-app",
+      buttonLink: "https://davidfonseca.io/projects/applicant-submission-app",
+      target: "_blank",      
     },
     {
       title: "Personal Portfolio",
       description:
         "A personal portfolio website built with Svelte to showcase projects and skills.",
       cardVariant: "pastel_3",
-      buttonLink: "personal-portfolio",
+      buttonLink: "/",
+      target: "_self",      
     },
   ] as const,
   analytics: [
@@ -140,14 +164,16 @@ export const projects = {
       description:
         "Focuses on mapping burned areas from wildfires using hyperspectral data, enhancing disaster response strategies.",
       cardVariant: "pastel_1",
-      buttonLink: "palisades-fire-mapping",
+      buttonLink: "https://github.com/DavidFonsecaG/palisades-fire-mapping-aviris-viirs/blob/main/notebooks/mapping_wildfires.ipynb",
+      target: "_blank",      
     },
     {
       title: "Music Trends During Election Cycles",
       description:
         "Analyzed Spotify data to explore how music popularity, danceability, and genres shift during U.S. election years.",
       cardVariant: "pastel_2",
-      buttonLink: "spotify-election-trends",
+      buttonLink: "https://github.com/DavidFonsecaG/Open-Science-101/tree/main/Group-Projects/Music%20Trends%20During%20Election%20Cycles%20-%20Spotify",
+      target: "_blank",      
     },
   ] as const,
 } as const;

@@ -60,7 +60,7 @@
 
         <div class="grid lg:grid-cols-2 gap-5 text-card">
           {#each sectionProjects as project (project.buttonLink)}
-            <a href={`/projects/${project.buttonLink}`}>
+            <a href={project.buttonLink} target={project.target}>
               <Card
                 variant={project.cardVariant}
                 className="p-6 md:p-8 items-center justify-center transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-101 hover:shadow-lg"
