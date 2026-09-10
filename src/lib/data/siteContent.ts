@@ -25,7 +25,7 @@ export const pinnedProjects = [
     cardVariant: "secondary",
     buttonText: "Learn more",
     buttonLink:
-      "https://github.com/DavidFonsecaG/palisades-fire-mapping-aviris-viirs/blob/main/notebooks/mapping_wildfires.ipynb",
+      "https://ciesin-geospatial.github.io/TOPSTSCHOOL-community/m501-viirs-wildfires.html",
     target: "_blank"
   },
   // {
@@ -130,7 +130,7 @@ export const projects = {
       description:
         "Utilizes satellite imagery (AVIRIS) to detect and map wildfire burn areas with geospatial processing and machine learning.",
       cardVariant: "pastel_1",
-      buttonLink: "https://github.com/DavidFonsecaG/palisades-fire-mapping-aviris-viirs/blob/main/notebooks/mapping_wildfires.ipynb",
+      buttonLink: "https://ciesin-geospatial.github.io/TOPSTSCHOOL-community/m501-viirs-wildfires.html",
       target: "_blank",      
     },
     {
@@ -164,7 +164,7 @@ export const projects = {
       description:
         "Focuses on mapping burned areas from wildfires using hyperspectral data, enhancing disaster response strategies.",
       cardVariant: "pastel_1",
-      buttonLink: "https://github.com/DavidFonsecaG/palisades-fire-mapping-aviris-viirs/blob/main/notebooks/mapping_wildfires.ipynb",
+      buttonLink: "https://ciesin-geospatial.github.io/TOPSTSCHOOL-community/m501-viirs-wildfires.html",
       target: "_blank",      
     },
     {
