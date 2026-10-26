@@ -13,7 +13,7 @@ export const pinnedProjects = [
     badgeText: "Full-Stack",
     cardVariant: "default",
     buttonText: "Learn more",
-    buttonLink: "https://trackly-mcc.vercel.app/",
+    buttonLink: "https://trackly.davidfonseca.io//",
     target: "_blank"
   },
   {
@@ -114,7 +114,7 @@ export const projects = {
       description:
         "A lightweight tool to help admissions counselors easily manage and track student documents throughout the admissions process.",
       cardVariant: "pastel_2",
-      buttonLink: "https://trackly-mcc.vercel.app",
+      buttonLink: "https://trackly.davidfonseca.io/",
       target: "_blank",
     },
     {
