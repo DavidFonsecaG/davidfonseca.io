@@ -13,7 +13,7 @@ export const pinnedProjects = [
     badgeText: "Full-Stack",
     cardVariant: "default",
     buttonText: "Learn more",
-    buttonLink: "https://trackly.davidfonseca.io//",
+    buttonLink: "https://trackly.davidfonseca.io/",
     target: "_blank"
   },
   {
